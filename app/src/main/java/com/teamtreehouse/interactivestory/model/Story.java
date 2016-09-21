@@ -5,7 +5,7 @@ import com.teamtreehouse.interactivestory.R;
 public class Story {
     private Page[] mPages;
 
-    public Story(){
+    public Story() {
         mPages = new Page[7];
 
         mPages[0] = new Page(
@@ -48,9 +48,10 @@ public class Story {
     }
 
 
-
-
-
-
+    public Page getPage(int pageNumber) {
+        return mPages[pageNumber];
     }
+
+
+}
 
